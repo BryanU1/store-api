@@ -1,1 +1,1 @@
-web: npm run serverstart
+web: node ./bin/www/
