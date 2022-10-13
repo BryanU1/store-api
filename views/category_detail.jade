@@ -11,7 +11,7 @@ block content
     dl 
       each item in items 
         dt 
-          a(href=item.url) #{item.name} - $#{item.price}
+          a(href=item.url) #{item.name} - $#{parseFloat(item.price).toFixed(2)}
 
       else 
         p This category has no items

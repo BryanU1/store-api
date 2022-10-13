@@ -5,7 +5,7 @@ block content
 
   p #[strong Image URL:] 
     a(href=item.imgUrl) #{item.imgUrl}
-  p #[strong Price:] $#{item.price}
+  p #[strong Price:] $#{parseFloat(item.price).toFixed(2)}
   p #[strong Category:] 
     each val, index in item.category 
       a(href=val.url)  #{val.name}
